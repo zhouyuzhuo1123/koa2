@@ -1,0 +1,29 @@
+{
+  "name": "zyz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon app/build/dev-server.js --watch app",
+    "build": "cross-env NODE_ENV=production webpack --config app/build/webpack.config.js --progress --hide-modules && node app/build/build.js"
+  },
+  "author": "zyz",
+  "license": "ISC",
+  "dependencies": {
+    "babel-runtime": "^6.0.0",
+    "cross-env": "^3.1.3",
+    "core-decorators": "^0.13.0",
+    "koa": "^2.0.0",
+    "koa-static": "^2.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.14.0",
+    "babel-loader": "^6.2.5",
+    "babel-polyfill": "^6.20.0",
+    "babel-preset-es2015": "^6.13.2",
+    "babel-preset-stage-2": "^6.11.0",
+    "babel-register": "^6.18.0",
+    "nodemon": "^1.11.0",
+    "webpack": "^2.1.0-beta.25"
+  }
+}
